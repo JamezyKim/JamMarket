@@ -1,0 +1,38 @@
+p{
+    color: red;
+}
+
+#JamHompage{
+    background-color: #00BFA6; padding: 15px;
+}
+
+#signInLink{
+    margin-left: 1800px; padding-top: 5px; font-size: 20px
+}
+
+#marketSectionLink{
+    display: flex; justify-content: center;
+}
+
+#marketSectionsTable{
+    width: 200px; height: 300px;
+}
+
+#welcomeText{
+    width: 70%; margin: 0 auto;  display: flex; flex-direction: column; background-color: lightblue; align-items: center; padding-top: 30px; 
+}
+
+#mainContent {
+    display: flex;
+    align-items: flex-start; 
+    gap: 1px; 
+}
+
+.signInLabel{
+    font-size:18px;
+}
+
+.signInForm{
+    margin-left: 30px;
+}
+
