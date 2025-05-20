@@ -12,19 +12,15 @@
                 <span style="margin-left: 200px; padding-top: 5px; font-size: 17px"><a href="login.html">Create account</a></span>
                 <span style="margin-left: 6px; padding-top: 5px; font-size: 17px"><a href="homePage.html">HomePage</a></span>
             </p>
-            <form class = "signInForm" style="margin-top: 30px;">
-                <label class="signInLabel" for="email">Email:</label><br>
+            <form class = "signInForm" onsubmit="getUserInfo(); return false;">
+                <label class="signInLabel" for="email" style="margin-top: 30px;">Email:</label><br>
                 <input type="email" id="email" name="email" style="width: 90%; padding: 8px;"><br><br>
-            </form>
 
-            <form class = "signInForm">
                 <label class="signInLabel" for="password">Password:</label><br>
                 <input type="password" id="password" name="password" style="width: 90%; padding: 8px;"><br><br>
-            </form>
 
-            <form class = "signInForm">
                 <label class="signInLabel" for="submit" >submit:</label><br>
-                <input type="submit" id="submit" name="submit" style="width: 90%; padding: 8px;" onclick="encrypt()"><br><br>
+                <input type="submit" id="submit" name="submit" style="width: 90%; padding: 8px;" onclick="getUserInfo()"><br><br>
             </form>
         </div>
         <br>
@@ -36,12 +32,14 @@
         var email;
         var password;
 
-
-        function encrypt(){
+        function getUserInfo(){
             email = document.getElementById("email").value;
+            password = document.getElementById("password").value;
+
+            console.log(email);
+            console.log(password);
         }
-        console.log(email);
-        console.log(password);
+
     </script>
 </html>
 
