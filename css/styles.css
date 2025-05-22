@@ -28,6 +28,14 @@ p{
     gap: 1px; 
 }
 
+#signInTextBox{
+    padding-top: 5px; font-size: 35px
+}
+
+#createAccountLink{
+    margin-left: 200px; padding-top: 5px; font-size: 17px;
+}
+
 .signInLabel{
     font-size:18px;
 }
