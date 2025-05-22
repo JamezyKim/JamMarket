@@ -60,5 +60,5 @@ p{
 }
 
 #blackRoundBox{
-    width: 500px; height: 800px; border: 8px solid black; margin-left: 650px;
+    width: 500px; height: 800px; border: 8px solid black; margin-left: 650px; border-radius: 40px;
 }
