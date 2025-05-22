@@ -15,7 +15,9 @@ p{
 }
 
 .bodySet{
-    font-family: sans-serif
+    font-family: sans-serif;
+    background-color: #f2f4f8;
+    height: 95vh;
 }
 
 #JamHompage{
@@ -63,12 +65,24 @@ p{
     margin-left: 200px; 
     padding-top: 5px; 
     font-size: 17px;
+    padding: 8px 15px;  
+    display: inline-block;
+    background-color: #0066ff;
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 #homePageLink{
-    margin-left: 6px; 
+    margin-left: 0px; 
     padding-top: 5px; 
     font-size: 17px;
+    padding: 8px 15px;  
+    display: inline-block;
+    background-color: #0066ff;
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 #emailLabel{
@@ -76,6 +90,7 @@ p{
 }
 
 #blackRoundBox{
+    background: #fff;    
     width: 500px; 
     height: 800px; 
     border: 8px solid black; 
