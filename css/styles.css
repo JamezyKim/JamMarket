@@ -10,7 +10,8 @@ p{
 }
 
 .inputLabel{
-    width: 90%; padding: 8px;
+    width: 90%; 
+    padding: 8px;
 }
 
 .bodySet{
@@ -18,23 +19,33 @@ p{
 }
 
 #JamHompage{
-    background-color: #00BFA6; padding: 15px;
+    background-color: #00BFA6; 
+    padding: 15px;
 }
 
 #signInLink{
-    margin-left: 1800px; padding-top: 5px; font-size: 20px
+    margin-left: 1800px; 
+    padding-top: 5px; 
+    font-size: 20px
 }
 
 #marketSectionLink{
-    display: flex; justify-content: center;
+    display: flex; 
+    justify-content: center;
 }
 
 #marketSectionsTable{
-    width: 200px; height: 300px;
+    width: 200px; 
+    height: 300px;
 }
 
 #welcomeText{
-    width: 70%; margin: 0 auto;  display: flex; flex-direction: column; background-color: lightblue; align-items: center; padding-top: 30px; 
+    width: 70%; margin: 0 auto;  
+    display: flex; 
+    flex-direction: column; 
+    background-color: lightblue; 
+    align-items: center; 
+    padding-top: 30px; 
 }
 
 #mainContent {
@@ -44,15 +55,20 @@ p{
 }
 
 #signInTextBox{
-    padding-top: 5px; font-size: 35px
+    padding-top: 5px; 
+    font-size: 35px
 }
 
 #createAccountLink{
-    margin-left: 200px; padding-top: 5px; font-size: 17px;
+    margin-left: 200px; 
+    padding-top: 5px; 
+    font-size: 17px;
 }
 
 #homePageLink{
-    margin-left: 6px; padding-top: 5px; font-size: 17px;
+    margin-left: 6px; 
+    padding-top: 5px; 
+    font-size: 17px;
 }
 
 #emailLabel{
@@ -60,5 +76,15 @@ p{
 }
 
 #blackRoundBox{
-    width: 500px; height: 800px; border: 8px solid black; margin-left: 650px; border-radius: 40px;
+    width: 500px; 
+    height: 800px; 
+    border: 8px solid black; 
+    margin-left: 650px; 
+    border-radius: 40px;
+}
+
+#submitButton{
+    width: 94%;
+    height: 50px;
+    margin: 0px;
 }
