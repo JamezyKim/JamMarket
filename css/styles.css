@@ -61,9 +61,7 @@ p{
     font-size: 35px
 }
 
-#createAccountLink{
-    margin-left: 200px; 
-    padding-top: 5px; 
+.linkBox{
     font-size: 17px;
     padding: 8px 15px;  
     display: inline-block;
@@ -73,16 +71,18 @@ p{
     border-radius: 6px;
 }
 
+.textDecoration{
+    text-decoration: none; 
+}
+
+#createAccountLink{
+    margin-left: 200px; 
+    padding-top: 5px; 
+}
+
 #homePageLink{
     margin-left: 0px; 
     padding-top: 5px; 
-    font-size: 17px;
-    padding: 8px 15px;  
-    display: inline-block;
-    background-color: #0066ff;
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 6px;
 }
 
 #emailLabel{
