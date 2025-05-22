@@ -1,6 +1,17 @@
 p{
     color: red;
 }
+.signInLabel{
+    font-size:18px;
+}
+
+.signInForm{
+    margin-left: 30px;
+}
+
+.inputLabel{
+    width: 90%; padding: 8px;
+}
 
 #JamHompage{
     background-color: #00BFA6; padding: 15px;
@@ -36,11 +47,14 @@ p{
     margin-left: 200px; padding-top: 5px; font-size: 17px;
 }
 
-.signInLabel{
-    font-size:18px;
+#homePageLink{
+    margin-left: 6px; padding-top: 5px; font-size: 17px;
 }
 
-.signInForm{
-    margin-left: 30px;
+#emailLabel{
+    margin-top: 30px;
 }
 
+#blackRoundBox{
+    width: 500px; height: 800px; border: 8px solid black; margin-left: 650px;
+}

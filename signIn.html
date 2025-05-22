@@ -7,20 +7,20 @@
     </head>
     <body>
         <h1>Invoice System</h1>
-        <div style="width: 500px; height: 800px; border: 8px solid black; margin-left: 650px;">
+        <div id="blackRoundBox">
             <p class = "signInForm" id="signInTextBox">Sign in
                 <span id="createAccountLink"><a href="login.html">Create account</a></span>
-                <span style="margin-left: 6px; padding-top: 5px; font-size: 17px"><a href="homePage.html">HomePage</a></span>
+                <span id="homePageLink"><a href="homePage.html">HomePage</a></span>
             </p>
             <form class = "signInForm" onsubmit="getUserInfo(); return false;">
-                <label class="signInLabel" for="email" style="margin-top: 30px;">Email:</label><br>
-                <input type="email" id="email" name="email" style="width: 90%; padding: 8px;"><br><br>
+                <label class="signInLabel" for="email" id="emailLabel">Email:</label><br>
+                <input type="email" id="email" name="email" class="inputLabel"><br><br>
 
                 <label class="signInLabel" for="password">Password:</label><br>
-                <input type="password" id="password" name="password" style="width: 90%; padding: 8px;"><br><br>
+                <input type="password" id="password" name="password" class="inputLabel"><br><br>
 
                 <label class="signInLabel" for="submit" >submit:</label><br>
-                <input type="submit" id="submit" name="submit" style="width: 90%; padding: 8px;" onclick="getUserInfo()"><br><br>
+                <input type="submit" id="submit" name="submit" class="inputLabel" onclick="getUserInfo()"><br><br>
             </form>
         </div>
         <br>
