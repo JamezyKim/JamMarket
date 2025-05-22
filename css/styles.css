@@ -13,6 +13,10 @@ p{
     width: 90%; padding: 8px;
 }
 
+.bodySet{
+    font-family: sans-serif
+}
+
 #JamHompage{
     background-color: #00BFA6; padding: 15px;
 }
