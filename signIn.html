@@ -12,15 +12,16 @@
                 <span><a href="login.html" id="createAccountLink" class="linkBox">Create account</a></span>
                 <span ><a href="homePage.html" id="homePageLink" class="linkBox">HomePage</a></span>
             </p>
-            <form class = "signInForm" onsubmit="getUserInfo(); return false;">
-                <label class="signInLabel" for="email" id="emailLabel">Email:</label><br>
+            <form class = "signInForm" onsubmit="getUserInfo(event); return false;">
+                <label class="signInLabel" for="email">Email:</label><br>
                 <input type="email" id="email" name="email" class="inputLabel" placeholder="ex: abc@gmail.com"><br><br>
 
                 <label class="signInLabel" for="password">Password:</label><br>
                 <input type="password" id="password" name="password" class="inputLabel"><br><br>
 
-                <label id="submitButton" for="submit"></label><br>
-                <input type="submit" id="submitButton" name="submit" class="inputLabel" onclick="getUserInfo()"><br><br>
+                <!-- <label id="submitButton"></label> -->
+                <br>
+                <input type="submit" id="submitButton" name="submit" class="inputLabel"><br><br>
             </form>
         </div>
         <br>
@@ -30,13 +31,36 @@
         var email;
         var password;
 
-        function getUserInfo(){
+        const dataBase = [
+            { email: 'yt4921@gmail.com', password: '123' },
+            { email: 'nam@gmail.com',   password: '123'  },
+            { email: 'ykkk@gmail.com',     password: '123'  }
+        ]
+
+        function getUserInfo(event){
+            event.preventDefault();
             email = document.getElementById("email").value;
             password = document.getElementById("password").value;
-
             console.log(email);
             console.log(password);
+
+            var user = dataBase.find(u => u.email === email);
+
+            if(!user){
+                console.error("User info is not found");
+                alert("User info is not found");
+            }
+
+            else if (user.password !== password) {
+                console.error("Wrong password");
+                alert("Wrong password");
+            }
+            else{
+                console.log("Log in success");
+                alert("Log in success");
+            }
         }
+
 
     </script>
 </html>
