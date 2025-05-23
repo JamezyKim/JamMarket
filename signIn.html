@@ -12,14 +12,13 @@
                 <span><a href="login.html" id="createAccountLink" class="linkBox">Create account</a></span>
                 <span ><a href="homePage.html" id="homePageLink" class="linkBox">HomePage</a></span>
             </p>
-            <form class = "signInForm" onsubmit="getUserInfo(event); return false;">
+            <form class = "signInForm" onsubmit="encrypt(); decrypt(); getUserInfo(event);  return false;">
                 <label class="signInLabel" for="email">Email:</label><br>
                 <input type="email" id="email" name="email" class="inputLabel" placeholder="ex: abc@gmail.com"><br><br>
 
                 <label class="signInLabel" for="password">Password:</label><br>
                 <input type="password" id="password" name="password" class="inputLabel"><br><br>
 
-                <!-- <label id="submitButton"></label> -->
                 <br>
                 <input type="submit" id="submitButton" name="submit" class="inputLabel"><br><br>
             </form>
@@ -32,7 +31,7 @@
         var password;
 
         const dataBase = [
-            { email: 'yt4921@gmail.com', password: '123' },
+            { email: 'yt4921@gmail.com', password: 'abc' },
             { email: 'nam@gmail.com',   password: '123'  },
             { email: 'ykkk@gmail.com',     password: '123'  }
         ]
@@ -40,6 +39,7 @@
         function encrypt(){
             const inputText = document.getElementById("password").value;
             let encryptedText = "";
+            const key = 5;
             for(let i=0; i<inputText.length;i++){
                 const charCode = inputText.charCodeAt(i);
                 if(charCode >= 65 && charCode <= 90){
@@ -53,11 +53,13 @@
                 }
             }
             document.getElementById("password").value = encryptedText;
+            console.log("encrypted text: ",encryptedText );
         }
 
         function decrypt(){
             const inputText = document.getElementById("password").value;
             let decryptedText = "";
+            const key = 5;
             for(let i=0; i<inputText.length;i++){
                 const charCode = inputText.charCodeAt(i);
                 if(charCode >= 65 && charCode <= 90){
@@ -71,6 +73,7 @@
                 }
             }
             document.getElementById("password").value = decryptedText;
+            console.log("decrypted text: ",decryptedText );
         }
 
         function getUserInfo(event){
