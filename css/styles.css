@@ -16,7 +16,7 @@ p{
 
 .bodySet{
     font-family: sans-serif;
-    background-color: #f2f4f8;
+    background-color: #C8E7F3;
     height: 95vh;
 }
 
@@ -103,4 +103,8 @@ p{
 #submitButton{
     width: 94%;
     height: 50px;
+}
+
+#alternativeTextBox{
+    
 }
