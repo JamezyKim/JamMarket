@@ -38,11 +38,9 @@ function getUserInfo(event) {
 const encryptMap = {};
 const decryptMap = {};
 
-
-
 function biMap() {
-    const plainText = 'abcdefghijklmnopqrstuvwxyz';
-    const reversedText = 'zyxwvutsrqponmlkjihgfedcba';
+    let plainText = 'abcdefghijklmnopqrstuvwxyz';
+    let reversedText = 'zyxwvutsrqponmlkjihgfedcba';
 
     for (let i = 0; i < plainText.length; i++) {
         encryptMap[plainText[i]] = reversedText[i];
@@ -50,8 +48,8 @@ function biMap() {
     }
 
     for (let i = 0; i < plain.length; i++) {
-        encryptMap[plain[i].toUpperCase()] = cipher[i].toUpperCase();
-        decryptMap[cipher[i].toUpperCase()] = plain[i].toUpperCase();
+        encryptMap[plainText[i].toUpperCase()] = cipher[i].toUpperCase();
+        decryptMap[reversedText[i].toUpperCase()] = plain[i].toUpperCase();
     }
 }
 
@@ -59,7 +57,7 @@ function encrypt() {
     let inputText = document.getElementById('password').value;
     let encryptText = '';
 
-    for (let i = 0; i < plainText.length; i++) {
+    for (let i = 0; i < inputText.length; i++) {
         const input = inputText[i];
         encryptText += encryptMap[input] || input;
     }
@@ -74,8 +72,8 @@ function decrypt() {
 
     for (let i = 0; i < inputText.length; i++) {
         const input = inputText[i];
-        decryptedText += decryptMap[input] || input;
+        decryptText += decryptMap[input] || input;
     }
     document.getElementById("password").value = decryptedText;
-    console.log("Decrypted text:", decryptedText);
+    console.log("Decrypted text:", decryptText);
 }
