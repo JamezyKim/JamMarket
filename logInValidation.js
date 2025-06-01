@@ -40,7 +40,7 @@ const decryptMap = {};
 
 function biMap() {
     let plainText = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-    let reversedText = 'ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba';
+    let reversedText = '0987654321ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba';
 
     for (let i = 0; i < plainText.length; i++) {
         encryptMap[plainText[i]] = reversedText[i];
