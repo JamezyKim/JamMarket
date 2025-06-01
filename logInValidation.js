@@ -46,11 +46,6 @@ function biMap() {
         encryptMap[plainText[i]] = reversedText[i];
         decryptMap[reversedText[i]] = plainText[i];
     }
-
-    for (let i = 0; i < plainText.length; i++) {
-        encryptMap[plainText[i].toUpperCase()] = reversedText[i].toUpperCase();
-        decryptMap[reversedText[i].toUpperCase()] = plainText[i].toUpperCase();
-    }
 }
 
 function encrypt() {
